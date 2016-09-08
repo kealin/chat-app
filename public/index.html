@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+</head>
+
+<body ng-controller="homeController">
+
+
+<div id="main">
+
+    <div ng-view></div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/app.routes.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-socket-io/socket.js"></script>
+
+<script src="app/components/home/homeController.js"></script>
+<script src="app/shared/services/socketService.js"></script>
+
+</body>
+
+</html>
