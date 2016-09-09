@@ -2,8 +2,8 @@ angular.module('app').config(function($routeProvider) {
     $routeProvider
 
         .when('/', {
-            templateUrl : 'app/components/home/homeView.html',
-            controller  : 'homeController'
+            templateUrl : 'app/components/chat/chatView.html',
+            controller  : 'chatController'
         })
 
         .otherwise({ redirectTo: '/' });

@@ -1,0 +1,11 @@
+<div class="col-xs-12">
+    {{messages}}
+</div>
+
+<form role='form' novalidate name='form'>
+    <div class='form-group'>
+        <input type='text' required ng-max='50' ng-model='message' focus>
+        <button class='btn btn-sm btn-primary' ng-enable='form.$valid' ng-click="send(message)">Send!</button>
+    </div>
+</form>
+

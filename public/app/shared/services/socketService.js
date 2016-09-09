@@ -1,3 +1,5 @@
 app.service('socketService', function (socketFactory) {
-    return socketFactory();
+    var socket = socketFactory();
+    socket.forward('broadcast');
+    return socket;
 });
